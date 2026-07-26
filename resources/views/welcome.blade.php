@@ -456,7 +456,7 @@
                         <div class="mt-auto flex flex-wrap gap-5 pt-7">
 
                             <a
-                                href="YOUR_PORTFOLIO_GITHUB_LINK"
+                                href="https://github.com/ambagalaayomi-collab/ayomi-portfolio"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="font-semibold text-purple-400 transition
