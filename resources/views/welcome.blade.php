@@ -161,13 +161,20 @@
                         </h3>
 
                         <div class="mt-6 flex flex-wrap gap-3">
-                            <span class="skill-chip border bg-[#070914] border-[#9E7AFF]/20 rounded-3xl p-3 ">PHP</span>
-                            <span class="skill-chip border bg-[#070914] border-[#9E7AFF]/20 rounded-3xl p-3">Laravel</span>
-                            <span class="skill-chip border bg-[#070914] border-[#9E7AFF]/20 rounded-3xl p-3">Android Studio</span>
-                            <span class="skill-chip border bg-[#070914] border-[#9E7AFF]/20 rounded-3xl p-3">Java</span>
-                            <span class="skill-chip border bg-[#070914] border-[#9E7AFF]/20 rounded-3xl p-3">JavaScript</span>
-                            <span class="skill-chip border bg-[#070914] border-[#9E7AFF]/20 rounded-3xl p-3">HTML</span>
-                            <span class="skill-chip border bg-[#070914] border-[#9E7AFF]/20 rounded-3xl p-3">CSS</span>
+                            <span class="skill-chip border border-purple-500/20 
+                                        bg-purple-500/10 text-s rounded-xl p-3 ">PHP</span>
+                            <span class="skill-chip border border-purple-500/20
+                                        bg-purple-500/10 text-s rounded-xl p-3">Laravel</span>
+                            <span class="skill-chip border border-purple-500/20
+                                        bg-purple-500/10 text-s rounded-xl p-3">Android Studio</span>
+                            <span class="skill-chip border border-purple-500/20
+                                        bg-purple-500/10 text-s rounded-xl p-3">Java</span>
+                            <span class="skill-chip border border-purple-500/20
+                                        bg-purple-500/10 text-s rounded-xl p-3">JavaScript</span>
+                            <span class="skill-chip border border-purple-500/20
+                                        bg-purple-500/10 text-s rounded-xl p-3">HTML</span>
+                            <span class="skill-chip border border-purple-500/20
+                                        bg-purple-500/10 text-s rounded-xl p-3">CSS</span>
                         </div>
                     </div>
 
@@ -184,12 +191,18 @@
                         </h3>
 
                         <div class="mt-6 flex flex-wrap gap-3">
-                            <span class="skill-chip bg-[#070914] border border-[#9E7AFF]/20 rounded-3xl p-3">Tailwind CSS</span>
-                            <span class="skill-chip bg-[#070914] border border-[#9E7AFF]/20 rounded-3xl p-3">Bootstrap</span>
-                            <span class="skill-chip bg-[#070914] border border-[#9E7AFF]/20 rounded-3xl p-3">Figma</span>
-                            <span class="skill-chip bg-[#070914] border border-[#9E7AFF]/20 rounded-3xl p-3">MySQL</span>
-                            <span class="skill-chip bg-[#070914] border border-[#9E7AFF]/20 rounded-3xl p-3">Fire Base</span>
-                            <span class="skill-chip bg-[#070914] border border-[#9E7AFF]/20 rounded-3xl p-3">Responsive Design</span>
+                            <span class="skill-chip border border-sky-500/20
+                                        bg-sky-500/10 text-s rounded-xl p-3">Tailwind CSS</span>
+                            <span class="skill-chip border border-sky-500/20
+                                        bg-sky-500/10 text-s rounded-xl p-3">Bootstrap</span>
+                            <span class="skill-chip border border-sky-500/20
+                                        bg-sky-500/10 text-s rounded-xl p-3">Figma</span>
+                            <span class="skill-chip border border-sky-500/20
+                                        bg-sky-500/10 text-s rounded-xl p-3">MySQL</span>
+                            <span class="skill-chip border border-sky-500/20
+                                        bg-sky-500/10 text-s rounded-xl p-3">Fire Base</span>
+                            <span class="skill-chip border border-sky-500/20
+                                        bg-sky-500/10 text-s rounded-xl p-3">Responsive Design</span>
                         </div>
                     </div>
 
@@ -206,11 +219,16 @@
                         </h3>
 
                         <div class="mt-6 flex flex-wrap gap-3">
-                            <span class="skill-chip bg-[#070914] border border-[#9E7AFF]/20 rounded-3xl p-3">Manual Testing</span>
-                            <span class="skill-chip bg-[#070914] border border-[#9E7AFF]/20 rounded-3xl p-3">SDLC</span>
-                            <span class="skill-chip bg-[#070914] border border-[#9E7AFF]/20 rounded-3xl p-3">Git</span>
-                            <span class="skill-chip bg-[#070914] border border-[#9E7AFF]/20 rounded-3xl p-3">GitHub</span>
-                            <span class="skill-chip bg-[#070914] border border-[#9E7AFF]/20 rounded-3xl p-3">VS Code</span>
+                            <span class="skill-chip border border-purple-500/20
+                                        bg-purple-500/10 text-s rounded-xl p-3">Manual Testing</span>
+                            <span class="skill-chip border border-purple-500/20
+                                        bg-purple-500/10 text-s rounded-xl p-3">SDLC</span>
+                            <span class="skill-chip border border-purple-500/20
+                                        bg-purple-500/10 text-s rounded-xl p-3">Git</span>
+                            <span class="skill-chip border border-purple-500/20
+                                        bg-purple-500/10 text-s rounded-xl p-3">GitHub</span>
+                            <span class="skill-chip border border-purple-500/20
+                                        bg-purple-500/10 text-s rounded-xl p-3">VS Code</span>
                         </div>
                     </div>
                 </div>
