@@ -235,7 +235,7 @@
             </div>
 
             <!-- CSMS & Welfare Projects -->
-            <div class="grid w-full grid-cols-1 gap-7 lg:grid-cols-2">
+            <div class="grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
 
                 <!-- Construction Site Management System -->
                 <article
@@ -272,9 +272,7 @@
                         </h3>
 
                         <p class="mt-4 leading-7 text-gray-400">
-                            A workflow system for client project requests, engineer
-                            technical reports, manager proposals, PDF generation and
-                            client approval or rejection.
+                           A workflow system for client requests, technical reports, manager proposals, PDF generation and project tracking. Clients can review, approve or reject proposals through a structured process.
                         </p>
 
                         <!-- Technologies -->
