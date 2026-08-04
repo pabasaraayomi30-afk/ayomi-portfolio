@@ -14,11 +14,11 @@
     <body class="bg-[#070914] font-sans text-white antialiased">
     
        <!-- nav bar -->
-        <nav  x-data="{ open: false }" class= "border-b border-white/20 sticky top-0 z-50  backdrop-blur">
-            <div class="mx-auto flex h-20 px-6 lg:px-20 items-center justify-between">
+        <nav  x-data="{ open: false }" class= "sticky top-0 z-50 border-b border-white/20 backdrop-blur">
+            <div class="flex items-center justify-between h-20 px-6 mx-auto lg:px-20">
                 <!-- logo -->
                 <p class="text-2xl font-bold text-[#A680FF]">AYOMI</P>
-                <div class="hidden items-center gap-8 md:flex">
+                <div class="items-center hidden gap-8 md:flex">
                     <a href="#" class="text-base font-medium text-gray-300 transition hover:text-purple-400">Home</a>
                     <a href="#about" class="text-base font-medium text-gray-300 transition hover:text-purple-400">About</a>
                     <a href="#skills" class="text-base font-medium text-gray-300 transition hover:text-purple-400">Skills</a>
@@ -26,17 +26,17 @@
                     <a href="#contact" class="text-base font-medium text-gray-300 transition hover:text-purple-400">Contact</a>
                 </div>
                 <div class="hidden md:flex">
-                    <a href="{{ asset('files/Ayomi-Pabasara-CV.pdf') }}" download="Ayomi-Pabasara-CV.pdf"
-                    class="rounded-xl bg-purple-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-purple-500">Download CV</a>
+                    <a href="{{ asset('files/AyomiCV.pdf') }}" download="Ayomi-Pabasara-CV.pdf"
+                    class="px-5 py-3 text-sm font-semibold text-white transition bg-purple-600 rounded-xl hover:bg-purple-500">Download CV</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button type="button" @click="open = !open" class="rounded-lg p-2 hover:bg-white/10 md:hidden" aria-label="Open menu">
+                <button type="button" @click="open = !open" class="p-2 rounded-lg hover:bg-white/10 md:hidden" aria-label="Open menu">
 
                     <!-- Hamburger Icon -->
                     <svg
                         x-show="!open"
-                        class="h-6 w-6"
+                        class="w-6 h-6"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24">
@@ -53,7 +53,7 @@
                     <svg
                         x-show="open"
                         x-cloak
-                        class="h-6 w-6"
+                        class="w-6 h-6"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24">
@@ -70,19 +70,19 @@
 
             {{-- mobile nav --}}
             <div  x-show="open" x-transition x-cloak
-                class="border-t border-white/10 px-4 pb-4 md:hidden">
+                class="px-4 pb-4 border-t border-white/10 md:hidden">
 
                 <div class="flex flex-col items-center gap-2 pt-3">
-                    <a href="#" class="rounded-lg px-3 py-2 hover:bg-white/10">Home</a>
-                    <a href="#about" class="rounded-lg px-3 py-2 hover:bg-white/10">About</a>
-                    <a href="#skills" class="rounded-lg px-3 py-2 hover:bg-white/10">Skills</a>
-                    <a href="#projects" class="rounded-lg px-3 py-2 hover:bg-white/10">Projects</a>
-                    <a href="#contact" class="rounded-lg px-3 py-2 hover:bg-white/10">Contact</a>
+                    <a href="#" class="px-3 py-2 rounded-lg hover:bg-white/10">Home</a>
+                    <a href="#about" class="px-3 py-2 rounded-lg hover:bg-white/10">About</a>
+                    <a href="#skills" class="px-3 py-2 rounded-lg hover:bg-white/10">Skills</a>
+                    <a href="#projects" class="px-3 py-2 rounded-lg hover:bg-white/10">Projects</a>
+                    <a href="#contact" class="px-3 py-2 rounded-lg hover:bg-white/10">Contact</a>
                 </div>
 
                 <div class="flex justify-center mt-3">
                     <a href="{{ asset('files/Ayomi-Pabasara-CV.pdf') }}" download="Ayomi-Pabasara-CV.pdf"
-                    class="rounded-xl  bg-purple-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-purple-500">Download CV</a>
+                    class="px-5 py-3 text-sm font-semibold text-white transition bg-purple-600 rounded-xl hover:bg-purple-500">Download CV</a>
                 </div>
 
             </div>
@@ -97,7 +97,7 @@
                 <p class="mb-5 text-s font-bold uppercase tracking-[0.25em] text-purple-400">HELLO, I’M</p>
                 <h1 class="text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl">A.P.A. Pabasara</h1>
                 <p class="mt-5 text-xl font-semibold text-sky-400 sm:text-2xl">IT Undergraduate • QA & Web Development</p>
-                <p class="mt-7 max-w-2xl text-base leading-8 text-gray-400 sm:text-lg">
+                <p class="max-w-2xl text-base leading-8 text-gray-400 mt-7 sm:text-lg">
                     I build simple, responsive and user-friendly digital products.
                     Currently seeking an IT internship where I can contribute through
                     software quality assurance, web development and practical
@@ -105,21 +105,19 @@
                 </p>
 
                 <!-- Buttons -->
-                <div class="mt-8 flex flex-wrap gap-4">
+                <div class="flex flex-wrap gap-4 mt-8">
                     <a href="#projects"
-                        class="rounded-xl bg-purple-600 px-7 py-4 font-semibold text-white transition duration-300
-                        hover:-translate-y-1 hover:bg-purple-500">
+                        class="py-4 font-semibold text-white transition duration-300 bg-purple-600 rounded-xl px-7 hover:-translate-y-1 hover:bg-purple-500">
                         View My Work
                     </a>
 
                     <a href="#contact"
-                        class="rounded-xl border border-gray-600 px-7 py-4 font-semibold text-white transition duration-300
-                        hover:-translate-y-1 hover:border-purple-400 hover:text-purple-400">
+                        class="py-4 font-semibold text-white transition duration-300 border border-gray-600 rounded-xl px-7 hover:-translate-y-1 hover:border-purple-400 hover:text-purple-400">
                         Contact Me
                     </a>
                 </div>
 
-                <p class="mt-7 text-s text-gray-500">
+                <p class="text-gray-500 mt-7 text-s">
                     Based in Sri Lanka
                     <span class="mx-2">•</span>
                     Available for internship opportunities
@@ -136,7 +134,7 @@
                     <img
                         src="{{ asset('images/profile.jpeg') }}"
                         alt="A.P.A. Pabasara"
-                        class="absolute inset-0 h-full w-full object-cover object-top"
+                        class="absolute inset-0 object-cover object-top w-full h-full"
                     >
 
                     <!-- Dark Gradient -->
@@ -199,7 +197,7 @@
                         Tools and technologies I work with.
                     </h2>
 
-                    <p class="mt-5 max-w-2xl text-base leading-7 text-gray-400 sm:text-lg">
+                    <p class="max-w-2xl mt-5 text-base leading-7 text-gray-400 sm:text-lg">
                         Technologies and skills developed through my academic projects,
                         practical work and continuous learning.
                     </p>
@@ -212,7 +210,7 @@
                     <div class="rounded-2xl border border-white/10 bg-[#111426] p-7
                         transition duration-300 hover:-translate-y-1 hover:border-purple-500/40">
 
-                        <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/10 text-xl text-purple-400">
+                        <div class="flex items-center justify-center w-12 h-12 mb-6 text-xl text-purple-400 rounded-xl bg-purple-500/10">
                             &lt;/&gt;
                         </div>
 
@@ -220,29 +218,21 @@
                             Development
                         </h3>
 
-                        <div class="mt-6 flex flex-wrap gap-3">
-                            <span class="skill-chip border border-purple-500/20 
-                                        bg-purple-500/10 text-s rounded-xl p-3 ">PHP</span>
-                            <span class="skill-chip border border-purple-500/20
-                                        bg-purple-500/10 text-s rounded-xl p-3">Laravel</span>
-                            <span class="skill-chip border border-purple-500/20
-                                        bg-purple-500/10 text-s rounded-xl p-3">Android Studio</span>
-                            <span class="skill-chip border border-purple-500/20
-                                        bg-purple-500/10 text-s rounded-xl p-3">Java</span>
-                            <span class="skill-chip border border-purple-500/20
-                                        bg-purple-500/10 text-s rounded-xl p-3">JavaScript</span>
-                            <span class="skill-chip border border-purple-500/20
-                                        bg-purple-500/10 text-s rounded-xl p-3">HTML</span>
-                            <span class="skill-chip border border-purple-500/20
-                                        bg-purple-500/10 text-s rounded-xl p-3">CSS</span>
+                        <div class="flex flex-wrap gap-3 mt-6">
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl ">PHP</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Laravel</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Android Studio</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Java</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">JavaScript</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">HTML</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">CSS</span>
                         </div>
                     </div>
 
                     <!-- UI & Database -->
                     <div class="rounded-2xl border border-white/10 bg-[#111426] p-7 transition duration-300 hover:-translate-y-1
                         hover:border-sky-500/40">
-                        <div class="mb-6 flex h-12 w-12 items-center justify-center
-                            rounded-xl bg-sky-500/10 text-xl font-bold text-sky-400">
+                        <div class="flex items-center justify-center w-12 h-12 mb-6 text-xl font-bold rounded-xl bg-sky-500/10 text-sky-400">
                             UI
                         </div>
 
@@ -250,27 +240,19 @@
                             UI & Database
                         </h3>
 
-                        <div class="mt-6 flex flex-wrap gap-3">
-                            <span class="skill-chip border border-sky-500/20
-                                        bg-sky-500/10 text-s rounded-xl p-3">Tailwind CSS</span>
-                            <span class="skill-chip border border-sky-500/20
-                                        bg-sky-500/10 text-s rounded-xl p-3">Bootstrap</span>
-                            <span class="skill-chip border border-sky-500/20
-                                        bg-sky-500/10 text-s rounded-xl p-3">Figma</span>
-                            <span class="skill-chip border border-sky-500/20
-                                        bg-sky-500/10 text-s rounded-xl p-3">MySQL</span>
-                            <span class="skill-chip border border-sky-500/20
-                                        bg-sky-500/10 text-s rounded-xl p-3">Fire Base</span>
-                            <span class="skill-chip border border-sky-500/20
-                                        bg-sky-500/10 text-s rounded-xl p-3">Responsive Design</span>
+                        <div class="flex flex-wrap gap-3 mt-6">
+                            <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Tailwind CSS</span>
+                            <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Figma</span>
+                            <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">MySQL</span>
+                            <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Fire Base</span>
+                            <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Responsive Design</span>
                         </div>
                     </div>
 
                     <!-- QA & Tools -->
                     <div class="rounded-2xl border border-white/10 bg-[#111426] p-7
                         transition duration-300 hover:-translate-y-1 hover:border-purple-500/40">
-                        <div class="mb-6 flex h-12 w-12 items-center justify-center
-                                rounded-xl bg-purple-500/10 text-xl text-purple-400">
+                        <div class="flex items-center justify-center w-12 h-12 mb-6 text-xl text-purple-400 rounded-xl bg-purple-500/10">
                             ✓
                         </div>
 
@@ -278,17 +260,12 @@
                             QA & Tools
                         </h3>
 
-                        <div class="mt-6 flex flex-wrap gap-3">
-                            <span class="skill-chip border border-purple-500/20
-                                        bg-purple-500/10 text-s rounded-xl p-3">Manual Testing</span>
-                            <span class="skill-chip border border-purple-500/20
-                                        bg-purple-500/10 text-s rounded-xl p-3">SDLC</span>
-                            <span class="skill-chip border border-purple-500/20
-                                        bg-purple-500/10 text-s rounded-xl p-3">Git</span>
-                            <span class="skill-chip border border-purple-500/20
-                                        bg-purple-500/10 text-s rounded-xl p-3">GitHub</span>
-                            <span class="skill-chip border border-purple-500/20
-                                        bg-purple-500/10 text-s rounded-xl p-3">VS Code</span>
+                        <div class="flex flex-wrap gap-3 mt-6">
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Manual Testing</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">SDLC</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Git</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">GitHub</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">VS Code</span>
                         </div>
                     </div>
                 </div>
@@ -306,7 +283,7 @@
                     Projects that turned ideas into working systems.
                 </h2>
 
-                <p class="mt-5 max-w-2xl text-base leading-7 text-gray-400 sm:text-lg">
+                <p class="max-w-2xl mt-5 text-base leading-7 text-gray-400 sm:text-lg">
                     Academic projects developed using modern web technologies,
                     practical workflows and user-focused interfaces.
                 </p>
@@ -328,8 +305,7 @@
                         <img
                             src="{{ asset('images/csms.png') }}"
                             alt="Construction Site Management System"
-                            class="h-full w-full object-cover object-top
-                            transition duration-500 group-hover:scale-105"
+                            class="object-cover object-top w-full h-full transition duration-500 group-hover:scale-105"
                         >
 
                         <!-- Overlay -->
@@ -340,8 +316,8 @@
                     </div>
 
                     <!-- CSMS Content -->
-                    <div class="flex flex-1 flex-col p-7">
-                        <p class="text-xs font-bold uppercase tracking-widest text-orange-400">
+                    <div class="flex flex-col flex-1 p-7">
+                        <p class="text-xs font-bold tracking-widest text-orange-400 uppercase">
                             Featured Project
                         </p>
 
@@ -354,7 +330,7 @@
                         </p>
 
                         <!-- Technologies -->
-                        <div class="mt-6 flex flex-wrap gap-2">
+                        <div class="flex flex-wrap gap-2 mt-6">
                             <span class="project-tech">Laravel</span>
                             <span class="project-tech">MySQL</span>
                             <span class="project-tech">DomPDF</span>
@@ -362,13 +338,12 @@
                         </div>
 
                         <!-- Links -->
-                        <div class="mt-auto flex flex-wrap gap-5 pt-7">
+                        <div class="flex flex-wrap gap-5 mt-auto pt-7">
                             <a
                                 href="https://csms-2026-production.up.railway.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="font-semibold text-purple-400 transition
-                                hover:text-purple-300">
+                                class="font-semibold text-purple-400 transition hover:text-purple-300">
                                     Live Demo →
                             </a>
 
@@ -376,8 +351,7 @@
                                 href="https://github.com/ambagalaayomi-collab/csms-2026"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="font-semibold text-gray-400 transition
-                                hover:text-white">
+                                class="font-semibold text-gray-400 transition hover:text-white">
                                     GitHub ↗
                             </a>
                         </div>
@@ -395,38 +369,31 @@
 
                     <!-- Mobile UI Screens -->
                     <div class="relative h-64 shrink-0 overflow-hidden  bg-gradient-to-br from-green-950 to-[#111426] p-4">
-                        <div class="grid h-full grid-cols-4 items-center gap-2">
+                        <div class="grid items-center h-full grid-cols-4 gap-2">
 
                             <!-- Dashboard -->
                             <img
                                 src="{{ asset('images/welfare-app.png') }}"
                                 alt="Welfare App Dashboard"
-                                class="h-full w-full object-contain drop-shadow-2xl
-                                transition duration-500 group-hover:-translate-y-1">
+                                class="object-contain w-full h-full transition duration-500 drop-shadow-2xl group-hover:-translate-y-1">
 
                             <!-- Members -->
                             <img
                                 src="{{ asset('images/members.png') }}"
                                 alt="Welfare App Members"
-                                class="h-full w-full object-contain drop-shadow-2xl
-                                transition delay-75 duration-500
-                                group-hover:-translate-y-1">
+                                class="object-contain w-full h-full transition duration-500 delay-75 drop-shadow-2xl group-hover:-translate-y-1">
 
                             <!-- Fee Management -->
                             <img
                                 src="{{ asset('images/fees.png') }}"
                                 alt="Welfare App Fee Management"
-                                class="h-full w-full object-contain drop-shadow-2xl
-                                transition delay-100 duration-500
-                                group-hover:-translate-y-1">
+                                class="object-contain w-full h-full transition duration-500 delay-100 drop-shadow-2xl group-hover:-translate-y-1">
 
                             <!-- Meetings -->
                             <img
                                 src="{{ asset('images/meetings.png') }}"
                                 alt="Welfare App Meetings"
-                                class="h-full w-full object-contain drop-shadow-2xl
-                                transition delay-150 duration-500
-                                group-hover:-translate-y-1">
+                                class="object-contain w-full h-full transition duration-500 delay-150 drop-shadow-2xl group-hover:-translate-y-1">
                         </div>
 
                         <!-- Overlay -->
@@ -438,8 +405,8 @@
                     </div>
 
                     <!-- Welfare App Content -->
-                    <div class="flex flex-1 flex-col p-7">
-                        <p class="text-xs font-bold uppercase tracking-widest text-pink-400">
+                    <div class="flex flex-col flex-1 p-7">
+                        <p class="text-xs font-bold tracking-widest text-pink-400 uppercase">
                             Mobile Application
                         </p>
 
@@ -455,7 +422,7 @@
                         </p>
 
                         <!-- Technologies -->
-                        <div class="mt-6 flex flex-wrap gap-2">
+                        <div class="flex flex-wrap gap-2 mt-6">
                             <span class="project-tech">Android Studio</span>
                             <span class="project-tech">Kotlin</span>
                             <span class="project-tech">Firebase</span>
@@ -469,8 +436,7 @@
                                 href="https://github.com/ambagalaayomi-collab/WelfareManagementSystem"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="font-semibold text-purple-400 transition
-                                hover:text-purple-300">
+                                class="font-semibold text-purple-400 transition hover:text-purple-300">
                                 View on GitHub →
                             </a>
                         </div>
@@ -490,8 +456,7 @@
                         <img
                             src="{{ asset('images/portfolio.png') }}"
                             alt="Personal Portfolio Website"
-                            class="h-full w-full object-cover object-top
-                            transition duration-500 group-hover:scale-105">
+                            class="object-cover object-top w-full h-full transition duration-500 group-hover:scale-105">
 
                         <!-- Image Overlay -->
                         <div
@@ -502,8 +467,8 @@
                     </div>
 
                     <!-- Portfolio Content -->
-                    <div class="flex flex-1 flex-col p-7">
-                        <p class="text-xs font-bold uppercase tracking-widest text-purple-400">
+                    <div class="flex flex-col flex-1 p-7">
+                        <p class="text-xs font-bold tracking-widest text-purple-400 uppercase">
                             Personal Project
                         </p>
 
@@ -519,7 +484,7 @@
                         </p>
 
                         <!-- Technologies -->
-                        <div class="mt-6 flex flex-wrap gap-2">
+                        <div class="flex flex-wrap gap-2 mt-6">
                             <span class="project-tech">Laravel</span>
                             <span class="project-tech">Blade</span>
                             <span class="project-tech">Tailwind CSS</span>
@@ -529,14 +494,13 @@
                         </div>
 
                         <!-- Project Links -->
-                        <div class="mt-auto flex flex-wrap gap-5 pt-7">
+                        <div class="flex flex-wrap gap-5 mt-auto pt-7">
 
                             <a
                                 href="https://github.com/ambagalaayomi-collab/ayomi-portfolio"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="font-semibold text-purple-400 transition
-                                hover:text-purple-300">
+                                class="font-semibold text-purple-400 transition hover:text-purple-300">
                                 View on GitHub →
                             </a>
                         </div>
@@ -567,7 +531,7 @@
                             Let’s build something useful together.
                         </h2>
 
-                        <p class="mt-6 max-w-xl leading-7 text-gray-400">
+                        <p class="max-w-xl mt-6 leading-7 text-gray-400">
                             I am currently looking for Quality Assurance and Web Development
                             internship opportunities. Feel free to contact me about an
                             opportunity, collaboration or project.
@@ -579,13 +543,10 @@
                             <!-- Email -->
                             <a
                                 href="mailto:your-email@gmail.com"
-                                class="group flex items-center gap-4"
+                                class="flex items-center gap-4 group"
                             >
                                 <span
-                                    class="flex h-12 w-12 shrink-0 items-center justify-center
-                                        rounded-xl border border-purple-500/20
-                                        bg-purple-500/10 text-xl text-purple-400
-                                        transition group-hover:bg-purple-500/20"
+                                    class="flex items-center justify-center w-12 h-12 text-xl text-purple-400 transition border shrink-0 rounded-xl border-purple-500/20 bg-purple-500/10 group-hover:bg-purple-500/20"
                                 >
                                     ✉
                                 </span>
@@ -604,9 +565,7 @@
                             <!-- Location -->
                             <div class="flex items-center gap-4">
                                 <span
-                                    class="flex h-12 w-12 shrink-0 items-center justify-center
-                                        rounded-xl border border-sky-500/20
-                                        bg-sky-500/10 text-xl text-sky-400"
+                                    class="flex items-center justify-center w-12 h-12 text-xl border shrink-0 rounded-xl border-sky-500/20 bg-sky-500/10 text-sky-400"
                                 >
                                     ●
                                 </span>
@@ -624,15 +583,12 @@
                         </div>
 
                         <!-- Social Links -->
-                        <div class="mt-10 flex flex-wrap gap-4">
+                        <div class="flex flex-wrap gap-4 mt-10">
                             <a
                                 href="https://www.linkedin.com/in/ayomi-pabasara-b06551381?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="rounded-xl border border-white/10 bg-white/5
-                                    px-5 py-3 font-semibold text-gray-300 transition
-                                    hover:border-purple-400/50 hover:bg-purple-500/10
-                                    hover:text-purple-300"
+                                class="px-5 py-3 font-semibold text-gray-300 transition border rounded-xl border-white/10 bg-white/5 hover:border-purple-400/50 hover:bg-purple-500/10 hover:text-purple-300"
                             >
                                 LinkedIn ↗
                             </a>
@@ -657,7 +613,7 @@
                             <div>
                                 <label
                                     for="name"
-                                    class="mb-2 block text-sm font-semibold text-gray-300"
+                                    class="block mb-2 text-sm font-semibold text-gray-300"
                                 >
                                     Your Name
                                 </label>
@@ -680,7 +636,7 @@
                             <div>
                                 <label
                                     for="email"
-                                    class="mb-2 block text-sm font-semibold text-gray-300"
+                                    class="block mb-2 text-sm font-semibold text-gray-300"
                                 >
                                     Email Address
                                 </label>
@@ -703,7 +659,7 @@
                             <div>
                                 <label
                                     for="message"
-                                    class="mb-2 block text-sm font-semibold text-gray-300"
+                                    class="block mb-2 text-sm font-semibold text-gray-300"
                                 >
                                     Message
                                 </label>
@@ -725,9 +681,7 @@
                             <!-- Submit Button -->
                             <button
                                 type="submit"
-                                class="w-full rounded-xl bg-purple-600 px-7 py-4
-                                    font-semibold text-white transition duration-300
-                                    hover:-translate-y-1 hover:bg-purple-500"
+                                class="w-full py-4 font-semibold text-white transition duration-300 bg-purple-600 rounded-xl px-7 hover:-translate-y-1 hover:bg-purple-500"
                             >
                                 Send Message
                             </button>
@@ -749,7 +703,7 @@
                             AYOMI
                         </a>
 
-                        <p class="mt-3 max-w-md text-s leading-6 text-gray-500">
+                        <p class="max-w-md mt-3 leading-6 text-gray-500 text-s">
                             IT Undergraduate interested in Software Quality Assurance
                             and Web Development.
                         </p>
@@ -758,39 +712,34 @@
                     <!-- Footer Navigation -->
                     <nav class="flex flex-wrap justify-center gap-6">
                         <a href="#home"
-                            class="text-base font-medium text-gray-400
-                            transition hover:text-purple-400">
+                            class="text-base font-medium text-gray-400 transition hover:text-purple-400">
                             Home
                         </a>
 
                         <a
                             href="#about"
-                            class="text-base font-medium text-gray-400
-                                transition hover:text-purple-400"
+                            class="text-base font-medium text-gray-400 transition hover:text-purple-400"
                         >
                             About
                         </a>
 
                         <a
                             href="#skills"
-                            class="text-base font-medium text-gray-400
-                                transition hover:text-purple-400"
+                            class="text-base font-medium text-gray-400 transition hover:text-purple-400"
                         >
                             Skills
                         </a>
 
                         <a
                             href="#projects"
-                            class="text-base font-medium text-gray-400
-                                transition hover:text-purple-400"
+                            class="text-base font-medium text-gray-400 transition hover:text-purple-400"
                         >
                             Projects
                         </a>
 
                         <a
                             href="#contact"
-                            class="text-base font-medium text-gray-400
-                                transition hover:text-purple-400"
+                            class="text-base font-medium text-gray-400 transition hover:text-purple-400"
                         >
                             Contact
                         </a>
@@ -803,12 +752,8 @@
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn profile"
-                            class="flex h-11 w-11 items-center justify-center
-                                rounded-xl border border-white/10 bg-white/5
-                                text-sm font-bold text-gray-400 transition
-                                hover:border-purple-400/50
-                                hover:bg-blue-500/10 ">
-                             <img src="{{ asset('images/linkedin.png') }}"alt="LinkedIn" class="h-11 w-11 object-contain">
+                            class="flex items-center justify-center text-sm font-bold text-gray-400 transition border h-11 w-11 rounded-xl border-white/10 bg-white/5 hover:border-purple-400/50 hover:bg-blue-500/10 ">
+                             <img src="{{ asset('images/linkedin.png') }}"alt="LinkedIn" class="object-contain h-11 w-11">
                         </a>
 
                         <a
@@ -816,23 +761,17 @@
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="GitHub profile"
-                            class="flex h-11 w-11 items-center justify-center
-                                rounded-xl border border-white/10 bg-white/5
-                                text-sm font-bold text-gray-400 transition
-                                hover:border-purple-400/50
-                                hover:bg-purple-500/10 hover:text-purple-300"
+                            class="flex items-center justify-center text-sm font-bold text-gray-400 transition border h-11 w-11 rounded-xl border-white/10 bg-white/5 hover:border-purple-400/50 hover:bg-purple-500/10 hover:text-purple-300"
                         >
-                            <img src="{{ asset('images/github.png') }}"alt="github" class="h-11 w-11 object-contain">
+                            <img src="{{ asset('images/github.png') }}"alt="github" class="object-contain h-11 w-11">
                         </a>
                     </div>
                 </div>
 
                 <!-- Footer Bottom -->
                 <div
-                    class="mt-10 flex flex-col items-center justify-center gap-3
-                        border-t border-white/10 pt-6 text-center
-                        sm:flex-row sm:text-left">
-                    <p class="text-s text-gray-600">
+                    class="flex flex-col items-center justify-center gap-3 pt-6 mt-10 text-center border-t border-white/10 sm:flex-row sm:text-left">
+                    <p class="text-gray-600 text-s">
                         © {{ date('Y') }} Ayomi Pabasara. All rights reserved.
                     </p>
 
