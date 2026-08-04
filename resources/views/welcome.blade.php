@@ -81,7 +81,7 @@
                 </div>
 
                 <div class="flex justify-center mt-3">
-                    <a href="{{ asset('files/Ayomi-Pabasara-CV.pdf') }}" download="Ayomi-Pabasara-CV.pdf"
+                    <a href="{{ asset('files/AyomiCV.pdf') }}" download="Ayomi-Pabasara-CV.pdf"
                     class="px-5 py-3 text-sm font-semibold text-white transition bg-purple-600 rounded-xl hover:bg-purple-500">Download CV</a>
                 </div>
 
