@@ -14,8 +14,8 @@
     <body class="bg-[#070914] font-sans text-white antialiased">
     
        <!-- nav bar -->
-        <nav class= "border-b border-white/20 sticky top-0 z-50  backdrop-blur">
-            <div class="mx-auto flex h-20 px-6 lg:px-20 items-center justify-between px-6 lg:px-8">
+        <nav  x-data="{ open: false }" class= "border-b border-white/20 sticky top-0 z-50  backdrop-blur">
+            <div class="mx-auto flex h-20 px-6 lg:px-20 items-center justify-between">
                 <!-- logo -->
                 <p class="text-2xl font-bold text-[#A680FF]">AYOMI</P>
                 <div class="hidden items-center gap-8 md:flex">
@@ -25,17 +25,72 @@
                     <a href="#projects" class="text-base font-medium text-gray-300 transition hover:text-purple-400">Projects</a>
                     <a href="#contact" class="text-base font-medium text-gray-300 transition hover:text-purple-400">Contact</a>
                 </div>
-                <div>
+                <div class="hidden md:flex">
                     <a href="{{ asset('files/Ayomi-Pabasara-CV.pdf') }}" download="Ayomi-Pabasara-CV.pdf"
                     class="rounded-xl bg-purple-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-purple-500">Download CV</a>
                 </div>
+
+                <!-- Mobile Menu Button -->
+                <button type="button" @click="open = !open" class="rounded-lg p-2 hover:bg-white/10 md:hidden" aria-label="Open menu">
+
+                    <!-- Hamburger Icon -->
+                    <svg
+                        x-show="!open"
+                        class="h-6 w-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24">
+
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                        />
+                    </svg>
+
+                    <!-- Close Icon -->
+                    <svg
+                        x-show="open"
+                        x-cloak
+                        class="h-6 w-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24">
+
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"
+                        />
+                    </svg>
+                </button>
+            </div>
+
+            {{-- mobile nav --}}
+            <div  x-show="open" x-transition x-cloak
+                class="border-t border-white/10 px-4 pb-4 md:hidden">
+
+                <div class="flex flex-col items-center gap-2 pt-3">
+                    <a href="#" class="rounded-lg px-3 py-2 hover:bg-white/10">Home</a>
+                    <a href="#about" class="rounded-lg px-3 py-2 hover:bg-white/10">About</a>
+                    <a href="#skills" class="rounded-lg px-3 py-2 hover:bg-white/10">Skills</a>
+                    <a href="#projects" class="rounded-lg px-3 py-2 hover:bg-white/10">Projects</a>
+                    <a href="#contact" class="rounded-lg px-3 py-2 hover:bg-white/10">Contact</a>
+                </div>
+
+                <div class="flex justify-center mt-3">
+                    <a href="{{ asset('files/Ayomi-Pabasara-CV.pdf') }}" download="Ayomi-Pabasara-CV.pdf"
+                    class="rounded-xl  bg-purple-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-purple-500">Download CV</a>
+                </div>
+
             </div>
         </nav>    
 
         <!-- Hero Section -->
         <section id="home"
-            class="mx-auto flex min-h-[calc(80vh-80px)] w-full px-6 lg:px-20 flex-col items-center gap-50
-            px-6 pb-24 pt-24 lg:flex-row lg:px-8">
+            class="mx-auto flex min-h-[calc(80vh-80px)] w-full px-6 lg:px-20 flex-col items-center gap-50  pb-24 pt-24 lg:flex-row">
 
             <!-- Left Content -->
             <div class="w-full max-w-2xl">
