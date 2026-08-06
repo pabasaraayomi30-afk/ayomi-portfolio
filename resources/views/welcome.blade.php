@@ -96,13 +96,9 @@
             <div class="w-full max-w-2xl">
                 <p class="mb-5 text-s font-bold uppercase tracking-[0.25em] text-purple-400">HELLO, I’M</p>
                 <h1 class="text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl">A.P.A. Pabasara</h1>
-                <p class="mt-5 text-xl font-semibold text-sky-400 sm:text-2xl">IT Undergraduate • QA & Web Development</p>
+                <p class="mt-5 text-xl font-semibold text-sky-400 sm:text-2xl">IT Undergraduate • UI/UX & Web Development</p>
                 <p class="max-w-2xl text-base leading-8 text-gray-400 mt-7 sm:text-lg">
-                    I build simple, responsive and user-friendly digital products.
-                    Currently seeking an IT internship where I can contribute through
-                    software quality assurance, web development and practical
-                    problem-solving.
-                </p>
+                    Passionate about creating intuitive UI/UX designs and responsive websites that deliver great user experiences. Currently seeking an IT internship to apply my skills in UI/UX design, web development, and creative problem-solving.
 
                 <!-- Buttons -->
                 <div class="flex flex-wrap gap-4 mt-8">
@@ -153,7 +149,7 @@
                         </div>
 
                         <p class="mt-2 text-s text-sky-400">
-                            QA Intern • Web Developer Intern
+                            UI/UX • Web Developer Intern
                         </p>
                     </div>
                 </div>
@@ -223,9 +219,11 @@
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Laravel</span>
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Android Studio</span>
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Java</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">C#</span>
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">JavaScript</span>
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">HTML</span>
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">CSS</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Tailwind CSS</span>
                         </div>
                     </div>
 
@@ -237,14 +235,13 @@
                         </div>
 
                         <h3 class="text-xl font-bold text-white">
-                            UI & Database
+                            UI/UX Design
                         </h3>
 
                         <div class="flex flex-wrap gap-3 mt-6">
-                            <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Tailwind CSS</span>
                             <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Figma</span>
-                            <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">MySQL</span>
-                            <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Fire Base</span>
+                            <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Wireframing</span>
+                            <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Prototyping</span>
                             <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Responsive Design</span>
                         </div>
                     </div>
@@ -257,12 +254,12 @@
                         </div>
 
                         <h3 class="text-xl font-bold text-white">
-                            QA & Tools
+                            Database & Tools
                         </h3>
 
                         <div class="flex flex-wrap gap-3 mt-6">
-                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Manual Testing</span>
-                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">SDLC</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">MySQL</span>
+                            <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Firebase</span>
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Git</span>
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">GitHub</span>
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">VS Code</span>
@@ -532,9 +529,7 @@
                         </h2>
 
                         <p class="max-w-xl mt-6 leading-7 text-gray-400">
-                            I am currently looking for Quality Assurance and Web Development
-                            internship opportunities. Feel free to contact me about an
-                            opportunity, collaboration or project.
+                           I am currently seeking a UI/UX Design and Web Development internship. Feel free to contact me about internship opportunities, collaborations, or web design and development projects.
                         </p>
 
                         <!-- Contact Details -->
@@ -704,7 +699,7 @@
                         </a>
 
                         <p class="max-w-md mt-3 leading-6 text-gray-500 text-s">
-                            IT Undergraduate interested in Software Quality Assurance
+                            IT Undergraduate interested in UI/UX Design
                             and Web Development.
                         </p>
                     </div>
