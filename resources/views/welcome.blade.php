@@ -69,15 +69,15 @@
             </div>
 
             {{-- mobile nav --}}
-            <div  x-show="open" x-transition x-cloak
+            <div  x-show="open" x-transition x-cloak @click.outside="open = false"
                 class="px-4 pb-4 border-t border-white/10 md:hidden">
 
                 <div class="flex flex-col items-center gap-2 pt-3">
-                    <a href="#" class="px-3 py-2 rounded-lg hover:bg-white/10">Home</a>
-                    <a href="#about" class="px-3 py-2 rounded-lg hover:bg-white/10">About</a>
-                    <a href="#skills" class="px-3 py-2 rounded-lg hover:bg-white/10">Skills</a>
-                    <a href="#projects" class="px-3 py-2 rounded-lg hover:bg-white/10">Projects</a>
-                    <a href="#contact" class="px-3 py-2 rounded-lg hover:bg-white/10">Contact</a>
+                    <a @click="open=false" href="#" class="px-3 py-2 rounded-lg hover:bg-white/10">Home</a>
+                    <a @click="open=false" href="#about" class="px-3 py-2 rounded-lg hover:bg-white/10">About</a>
+                    <a @click="open=false" href="#skills" class="px-3 py-2 rounded-lg hover:bg-white/10">Skills</a>
+                    <a @click="open=false" href="#projects" class="px-3 py-2 rounded-lg hover:bg-white/10">Projects</a>
+                    <a @click="open=false" href="#contact" class="px-3 py-2 rounded-lg hover:bg-white/10">Contact</a>
                 </div>
 
                 <div class="flex justify-center mt-3">
