@@ -180,12 +180,12 @@
         </section>
 
         <!-- Technical Skills Section -->
-        <section id="skills" class="scroll-mt-20 bg-[#070914] px-6 py-24 lg:px-20">
+        <section  class="scroll-mt-20 bg-[#070914] px-6 py-24 lg:px-20">
             <div class="w-full">
 
                 <!-- Section Heading -->
                 <div class="mb-14">
-                    <p class="mb-3 text-s font-bold uppercase tracking-[0.25em] text-purple-400">
+                    <p id="skills" class="mb-3 text-s font-bold uppercase tracking-[0.25em] text-purple-400">
                         Technical Skills
                     </p>
 
