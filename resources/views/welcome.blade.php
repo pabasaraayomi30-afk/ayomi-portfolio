@@ -15,10 +15,7 @@
     <body class="bg-[#070914] font-sans text-white antialiased">
 
         <!-- Light/Dark Mode Pull Cord -->
-        <div id="pull-cord" class="fixed right-6 top-0 z-[9999] select-none md:block">
-
-            <!-- Cord Anchor -->
-            <div class="absolute left-1/2 top-0 h-2 w-2 -translate-x-1/2 rounded-full  bg-purple-500 shadow-[0_0_12px_#a855f7]"></div>
+        <div id="pull-cord" class="fixed right-10 top-0 z-[9999] select-none md:block">
 
             <!-- Rope -->
 
@@ -32,7 +29,7 @@
                     type="button"
                     aria-label="Pull to change theme"
                     aria-pressed="false"
-                    class="cord-handle">
+                    class="cord-handle shadow-[0_0_0_5px_rgba(147,51,234,0.12),0_8px_25px_rgba(147,51,234,0.4)]">
 
                     <span id="cord-icon">☀</span>
 
@@ -63,13 +60,9 @@
                 <div class="items-center hidden gap-8 md:flex">
 
                     <a href="#" class="text-base font-medium text-gray-300 transition hover:text-purple-400">Home</a>
-
                     <a href="#about" class="text-base font-medium text-gray-300 transition hover:text-purple-400">About</a>
-
                     <a href="#skills" class="text-base font-medium text-gray-300 transition hover:text-purple-400">Skills</a>
-
                     <a href="#projects" class="text-base font-medium text-gray-300 transition hover:text-purple-400">Projects</a>
-
                     <a href="#contact" class="text-base font-medium text-gray-300 transition hover:text-purple-400">Contact</a>
 
                 </div>
@@ -91,25 +84,17 @@
                     <svg
 
                         x-show="!open"
-
                         class="w-6 h-6"
-
                         fill="none"
-
                         stroke="currentColor"
-
                         viewBox="0 0 24 24">
 
                         <path
 
                             stroke-linecap="round"
-
                             stroke-linejoin="round"
-
                             stroke-width="2"
-
                             d="M4 6h16M4 12h16M4 18h16"
-
                         />
 
                     </svg>
@@ -119,29 +104,18 @@
                     <svg
 
                         x-show="open"
-
                         x-cloak
-
                         class="w-6 h-6"
-
                         fill="none"
-
                         stroke="currentColor"
-
                         viewBox="0 0 24 24">
-
                         <path
 
                             stroke-linecap="round"
-
                             stroke-linejoin="round"
-
                             stroke-width="2"
-
                             d="M6 18L18 6M6 6l12 12"
-
                         />
-
                     </svg>
 
                 </button>
@@ -151,7 +125,6 @@
             {{-- mobile nav --}}
 
             <div  x-show="open" x-transition x-cloak @click.outside="open = false"
-
                 class="px-4 pb-4 border-t border-white/10 md:hidden">
 
                 <div class="flex flex-col items-center gap-2 pt-3">
@@ -568,21 +541,13 @@
                         <div class="flex flex-wrap gap-3 mt-6">
 
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl ">PHP</span>
-
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Laravel</span>
-
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Android Studio</span>
-
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Java</span>
-
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">C#</span>
-
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">JavaScript</span>
-
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">HTML</span>
-
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">CSS</span>
-
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Tailwind CSS</span>
 
                         </div>
@@ -610,11 +575,8 @@
                         <div class="flex flex-wrap gap-3 mt-6">
 
                             <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Figma</span>
-
                             <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Wireframing</span>
-
                             <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Prototyping</span>
-
                             <span class="p-3 border skill-chip border-sky-500/20 bg-sky-500/10 text-s rounded-xl">Responsive Design</span>
 
                         </div>
@@ -642,13 +604,9 @@
                         <div class="flex flex-wrap gap-3 mt-6">
 
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">MySQL</span>
-
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Firebase</span>
-
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">Git</span>
-
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">GitHub</span>
-
                             <span class="p-3 border skill-chip border-purple-500/20 bg-purple-500/10 text-s rounded-xl">VS Code</span>
 
                         </div>
@@ -698,13 +656,9 @@
                 <article
 
                     class="group flex h-full min-w-0 flex-col overflow-hidden
-
                     rounded-2xl border border-white/10 bg-[#111426]
-
                     transition duration-300 hover:-translate-y-1
-
                     hover:border-purple-500/50 hover:shadow-2xl
-
                     hover:shadow-purple-950/30">
 
                     <!-- CSMS Project Image -->
@@ -760,11 +714,8 @@
                         <div class="flex flex-wrap gap-2 mt-6">
 
                             <span class="project-tech">Laravel</span>
-
                             <span class="project-tech">MySQL</span>
-
                             <span class="project-tech">DomPDF</span>
-
                             <span class="project-tech">Excel</span>
 
                         </div>
@@ -918,13 +869,9 @@
                         <div class="flex flex-wrap gap-2 mt-6">
 
                             <span class="project-tech">Android Studio</span>
-
                             <span class="project-tech">Kotlin</span>
-
                             <span class="project-tech">Firebase</span>
-
                             <span class="project-tech">CRUD</span>
-
                             <span class="project-tech">SMS Notifications</span>
 
                         </div>
@@ -936,13 +883,9 @@
                             <a
 
                                 href="https://github.com/ambagalaayomi-collab/WelfareManagementSystem"
-
                                 target="_blank"
-
                                 rel="noopener noreferrer"
-
                                 class="font-semibold text-purple-400 transition hover:text-purple-300">
-
                                 View on GitHub →
 
                             </a>
@@ -958,13 +901,9 @@
                 <article
 
                     class="group flex h-full min-w-0 flex-col overflow-hidden
-
                         rounded-2xl border border-white/10 bg-[#111426]
-
                         transition duration-300 hover:-translate-y-1
-
                         hover:border-purple-500/50 hover:shadow-2xl
-
                         hover:shadow-purple-950/30">
 
                     <!-- Portfolio Project Image -->
@@ -972,11 +911,8 @@
                     <div class="relative h-64 shrink-0 overflow-hidden bg-[#111426]">
 
                         <img
-
                             src="{{ asset('images/portfolio.png') }}"
-
                             alt="Personal Portfolio Website"
-
                             class="object-cover object-top w-full h-full transition duration-500 group-hover:scale-105">
 
                         <!-- Image Overlay -->
@@ -984,9 +920,7 @@
                         <div
 
                             class="pointer-events-none absolute inset-0
-
                                 bg-gradient-to-t from-[#111426]/80
-
                                 via-transparent to-transparent">
 
                         </div>
@@ -996,7 +930,6 @@
                     <!-- Portfolio Content -->
 
                     <div class="flex flex-col flex-1 p-7">
-
                         <p class="text-xs font-bold tracking-widest text-purple-400 uppercase">
 
                             Personal Project
@@ -1012,11 +945,8 @@
                         <p class="mt-4 leading-7 text-gray-400">
 
                             A modern and responsive personal portfolio website designed in
-
                             Figma and developed using Laravel and Tailwind CSS. The website
-
                             showcases my technical skills, education, academic projects and
-
                             professional information.
 
                         </p>
@@ -1026,15 +956,10 @@
                         <div class="flex flex-wrap gap-2 mt-6">
 
                             <span class="project-tech">Laravel</span>
-
                             <span class="project-tech">Blade</span>
-
                             <span class="project-tech">Tailwind CSS</span>
-
                             <span class="project-tech">JavaScript</span>
-
                             <span class="project-tech">Figma</span>
-
                             <span class="project-tech">Responsive Design</span>
 
                         </div>
@@ -1046,13 +971,9 @@
                             <a
 
                                 href="https://github.com/ambagalaayomi-collab/ayomi-portfolio"
-
                                 target="_blank"
-
                                 rel="noopener noreferrer"
-
                                 class="font-semibold text-purple-400 transition hover:text-purple-300">
-
                                 View on GitHub →
 
                             </a>
@@ -1076,7 +997,6 @@
                 <div
 
                     class="grid overflow-hidden rounded-3xl border border-purple-500/20
-
                     bg-[#111426] lg:grid-cols-2">
 
                    <!-- Left Contact Content -->
@@ -1084,27 +1004,22 @@
                     <div
 
                         class="flex flex-col justify-center border-b border-white/10
-
                             bg-gradient-to-br from-[#17112C] via-[#111426] to-[#0B0E1C]
-
                             p-8 sm:p-12 lg:border-b-0 lg:border-r lg:p-16"
 
                     >
 
                         <p class="text-sm font-bold uppercase tracking-[0.25em] text-purple-400">
-
                             Get In Touch
 
                         </p>
 
                         <h2 class="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl">
-
                             Let’s build something useful together.
 
                         </h2>
 
                         <p class="max-w-xl mt-6 leading-7 text-gray-400">
-
                            I am currently seeking a UI/UX Design and Web Development internship. Feel free to contact me about internship opportunities, collaborations, or web design and development projects.
 
                         </p>
@@ -1112,13 +1027,11 @@
                         <!-- Contact Details -->
 
                         <div class="mt-10 space-y-5">
-
                             <!-- Email -->
 
                             <a
 
                                 href="mailto:your-email@gmail.com"
-
                                 class="flex items-center gap-4 group"
 
                             >
@@ -1192,11 +1105,8 @@
                             <a
 
                                 href="https://www.linkedin.com/in/ayomi-pabasara-b06551381?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-
                                 target="_blank"
-
                                 rel="noopener noreferrer"
-
                                 class="px-5 py-3 font-semibold text-gray-300 transition border rounded-xl border-white/10 bg-white/5 hover:border-purple-400/50 hover:bg-purple-500/10 hover:text-purple-300"
 
                             >
@@ -1248,25 +1158,15 @@
                                 <input
 
                                     id="name"
-
                                     type="text"
-
                                     name="name"
-
                                     placeholder="Enter your name"
-
                                     class="w-full rounded-xl border border-white/10
-
                                         bg-[#070914] px-5 py-4 text-white
-
                                         outline-none transition
-
                                         placeholder:text-gray-600
-
                                         focus:border-purple-500
-
                                         focus:ring-2 focus:ring-purple-500/20"
-
                                 >
 
                             </div>
@@ -1278,7 +1178,6 @@
                                 <label
 
                                     for="email"
-
                                     class="block mb-2 text-sm font-semibold text-gray-300"
 
                                 >
@@ -1290,25 +1189,15 @@
                                 <input
 
                                     id="email"
-
                                     type="email"
-
                                     name="email"
-
                                     placeholder="Enter your email"
-
                                     class="w-full rounded-xl border border-white/10
-
                                         bg-[#070914] px-5 py-4 text-white
-
                                         outline-none transition
-
                                         placeholder:text-gray-600
-
                                         focus:border-purple-500
-
                                         focus:ring-2 focus:ring-purple-500/20"
-
                                 >
 
                             </div>
@@ -1318,49 +1207,29 @@
                             <div>
 
                                 <label
-
                                     for="message"
-
                                     class="block mb-2 text-sm font-semibold text-gray-300"
-
                                 >
 
                                     Message
-
                                 </label>
-
                                 <textarea
-
                                     id="message"
-
                                     name="message"
-
                                     rows="5"
-
                                     placeholder="Write your message"
-
                                     class="w-full resize-none rounded-xl
-
                                         border border-white/10 bg-[#070914]
-
                                         px-5 py-4 text-white outline-none
-
-                                        transition placeholder:text-gray-600
-
+                                        transition placeholder:text-gray-60
                                         focus:border-purple-500
-
                                         focus:ring-2 focus:ring-purple-500/20"
-
                                 ></textarea>
 
                             </div>
-
                             <!-- Submit Button -->
-
                             <button
-
                                 type="submit"
-
                                 class="w-full py-4 font-semibold text-white transition duration-300 bg-purple-600 rounded-xl px-7 hover:-translate-y-1 hover:bg-purple-500"
 
                             >
@@ -1402,7 +1271,6 @@
                         <p class="max-w-md mt-3 leading-6 text-gray-500 text-s">
 
                             IT Undergraduate interested in UI/UX Design
-
                             and Web Development.
 
                         </p>
@@ -1411,59 +1279,33 @@
 
                     <!-- Footer Navigation -->
 
-                    <nav class="flex flex-wrap justify-center gap-6">
+                    <nav class="flex flex-wrap justify-center gap-6 bg-[#050711]">
 
-                        <a href="#home"
-
-                            class="text-base font-medium text-gray-400 transition hover:text-purple-400">
+                        <a href="#home" class="text-base font-medium text-gray-400 transition hover:text-purple-400">
 
                             Home
 
                         </a>
 
-                        <a
-
-                            href="#about"
-
-                            class="text-base font-medium text-gray-400 transition hover:text-purple-400"
-
-                        >
+                        <a href="#about" class="text-base font-medium text-gray-400 transition hover:text-purple-400">
 
                             About
 
                         </a>
 
-                        <a
-
-                            href="#skills"
-
-                            class="text-base font-medium text-gray-400 transition hover:text-purple-400"
-
-                        >
+                        <a href="#skills" class="text-base font-medium text-gray-400 transition hover:text-purple-400">
 
                             Skills
 
                         </a>
 
-                        <a
-
-                            href="#projects"
-
-                            class="text-base font-medium text-gray-400 transition hover:text-purple-400"
-
-                        >
+                        <a href="#projects" class="text-base font-medium text-gray-400 transition hover:text-purple-400">
 
                             Projects
 
                         </a>
 
-                        <a
-
-                            href="#contact"
-
-                            class="text-base font-medium text-gray-400 transition hover:text-purple-400"
-
-                        >
+                        <a href="#contact" class="text-base font-medium text-gray-400 transition hover:text-purple-400">
 
                             Contact
 
@@ -1478,29 +1320,20 @@
                         <a
 
                             href="https://www.linkedin.com/in/ayomi-pabasara-b06551381?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-
                             target="_blank"
-
                             rel="noopener noreferrer"
-
                             aria-label="LinkedIn profile"
-
                             class="flex items-center justify-center text-sm font-bold text-gray-400 transition border h-11 w-11 rounded-xl border-white/10 bg-white/5 hover:border-purple-400/50 hover:bg-blue-500/10 ">
-
-                             <img src="{{ asset('images/linkedin.png') }}"alt="LinkedIn" class="object-contain h-11 w-11">
+                            <img src="{{ asset('images/linkedin.png') }}"alt="LinkedIn" class="object-contain h-11 w-11">
 
                         </a>
 
                         <a
 
                             href="YOUR_GITHUB_PROFILE_LINK"
-
                             target="_blank"
-
                             rel="noopener noreferrer"
-
                             aria-label="GitHub profile"
-
                             class="flex items-center justify-center text-sm font-bold text-gray-400 transition border h-11 w-11 rounded-xl border-white/10 bg-white/5 hover:border-purple-400/50 hover:bg-purple-500/10 hover:text-purple-300"
 
                         >
@@ -1540,19 +1373,12 @@
                     Swal.fire({
 
                         icon: 'success',
-
                         title: 'Message Sent!',
-
                         text: @json(session('success')),
-
                         confirmButtonText: 'Done',
-
                         background: '#111426',
-
                         color: '#ffffff',
-
                         confirmButtonColor: '#9333ea',
-
                     });
 
                 });
@@ -1570,17 +1396,11 @@
                             Swal.fire({
 
                                 icon: 'error',
-
                                 title: 'Unable to Send Message',
-
                                 text: 'Please check the form and try again.',
-
                                 confirmButtonText: 'Check Form',
-
                                 background: '#111426',
-
                                 color: '#ffffff',
-
                                 confirmButtonColor: '#dc2626',
 
                             });
@@ -1596,15 +1416,10 @@
             document.addEventListener("DOMContentLoaded", function () {
 
                 const html = document.documentElement;
-
                 const cord = document.getElementById("pull-cord");
-
                 const rope = document.getElementById("cord-rope");
-
                 const handle = document.getElementById("cord-handle");
-
                 const icon = document.getElementById("cord-icon");
-
                 const help = document.getElementById("cord-help");
 
                 if (!cord || !rope || !handle) {
@@ -1614,15 +1429,10 @@
                 }
 
                 const normalLength = 125;
-
                 const maximumPull = 110;
-
                 const activationDepth = 70;
-
                 let dragging = false;
-
                 let startingY = 0;
-
                 let pullDistance = 0;
                 let wasDragged = false;
 
@@ -1646,7 +1456,24 @@
 
                     const darkMode = html.classList.contains("dark");
 
-                    icon.textContent = darkMode ? "☀" : "☾";
+                    icon.innerHTML  = darkMode ? 
+                    `<svg viewBox="0 0 24 24" width="19" height="19"
+                            fill="none" stroke="currentColor"
+                            stroke-width="2.4" stroke-linecap="round"
+                            stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3
+                                A6.7 6.7 0 0 0 21 12.8Z"/>
+                    </svg>` : 
+                   `<svg viewBox="0 0 24 24" width="19" height="19"
+                            fill="none" stroke="currentColor"
+                            stroke-width="2.3" stroke-linecap="round"
+                            aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41
+                                M17.66 17.66l1.41 1.41M2 12h2M20 12h2
+                                M4.93 19.07l1.41-1.41
+                                M17.66 6.34l1.41-1.41"/>
+                    </svg>`;
 
                     handle.setAttribute("aria-pressed", darkMode ? "false" : "true");
 
