@@ -13,3 +13,480 @@
 [x-cloak] {
     display: none !important;
 }
+
+/* Name Letter Animation */
+@keyframes letter-reveal {
+    0% {
+        opacity: 0;
+        filter: blur(15px);
+        transform: translateY(50px) rotate(5deg);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0) rotate(0);
+    }
+}
+
+/* General Fade Animation */
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Changing Role Animation */
+@keyframes role-change {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(20px) skewY(5deg);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0) skewY(0);
+    }
+}
+
+/* Profile Image Animation */
+@keyframes profile-reveal {
+    0% {
+        opacity: 0;
+        filter: blur(12px);
+        transform: translateX(70px) rotate(3deg);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0) rotate(0);
+    }
+}
+
+/* Animation Classes */
+@layer utilities {
+    .animate-letter-reveal {
+        opacity: 0;
+        animation: letter-reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .animate-fade-up {
+        opacity: 0;
+        animation: fade-up 0.8s ease-out forwards;
+    }
+
+    .animate-role-change {
+        animation: role-change 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .animate-profile-reveal {
+        opacity: 0;
+        animation: profile-reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+    }
+
+    .animation-delay-700 {
+        animation-delay: 700ms;
+    }
+
+    .animation-delay-900 {
+        animation-delay: 900ms;
+    }
+
+    .animation-delay-1000 {
+        animation-delay: 1000ms;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .animate-letter-reveal,
+    .animate-fade-up,
+    .animate-role-change,
+    .animate-profile-reveal {
+        opacity: 1;
+        animation: none;
+        filter: none;
+        transform: none;
+    }
+}
+
+/* Smooth theme colour change */
+html,
+body,
+nav,
+section,
+div,
+p,
+h1,
+h2,
+h3,
+a,
+button {
+    transition:
+        background-color 0.5s ease,
+        border-color 0.5s ease,
+        color 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+/* Pull Cord */
+.cord-rope {
+    position: relative;
+    width: 2px;
+    height: 125px;
+    margin-left: -1px;
+    background: linear-gradient(
+        to bottom,
+        rgba(168, 85, 247, 0.8),
+        rgba(255, 255, 255, 0.4)
+    );
+
+    transform-origin: top center;
+    transition:
+        height 0.15s ease-out,
+        transform 0.15s ease-out;
+}
+
+/* Rope texture */
+.cord-rope::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 2px;
+
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 4px,
+        rgba(255, 255, 255, 0.5) 5px,
+        transparent 7px
+    );
+}
+
+/* Pull handle */
+.cord-handle {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+
+    display: grid;
+    place-items: center;
+
+    width: 36px;
+    height: 36px;
+
+    color: white;
+    background: #9333ea;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 9999px;
+
+    cursor: grab;
+    transform: translateX(-50%);
+
+    box-shadow:
+        0 0 0 5px rgba(147, 51, 234, 0.12),
+        0 8px 25px rgba(147, 51, 234, 0.4);
+
+    touch-action: none;
+    z-index: 2;
+}
+
+.cord-handle:hover {
+    background: #a855f7;
+    transform: translateX(-50%) scale(1.08);
+}
+
+.cord-handle:active {
+    cursor: grabbing;
+}
+
+/* Cord release animation */
+.cord-rope.cord-release {
+    animation: cord-swing 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes cord-swing {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(9deg);
+    }
+
+    40% {
+        transform: rotate(-7deg);
+    }
+
+    60% {
+        transform: rotate(4deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Smooth Dark / Light mode transition */
+body,
+nav,
+section,
+footer,
+article,
+div,
+p,
+h1,
+h2,
+h3,
+a,
+input,
+textarea {
+    transition:
+        background-color 0.45s ease,
+        color 0.45s ease,
+        border-color 0.45s ease,
+        box-shadow 0.45s ease;
+}
+
+/* Pull cord */
+.cord-rope {
+    position: relative;
+    width: 2px;
+    height: 125px;
+    margin-left: -1px;
+    background: linear-gradient(to bottom, #a855f7, rgba(255, 255, 255, 0.45));
+    transform-origin: top center;
+    transition:
+        height 0.15s ease-out,
+        transform 0.15s ease-out;
+}
+
+.cord-rope::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        to bottom,
+        transparent 0 4px,
+        rgba(255, 255, 255, 0.55) 5px,
+        transparent 7px
+    );
+}
+
+.cord-handle {
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    z-index: 2;
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.55);
+    border-radius: 9999px;
+    color: white;
+    background: #9333ea;
+    box-shadow:
+        0 0 0 5px rgba(147, 51, 234, 0.12),
+        0 8px 25px rgba(147, 51, 234, 0.4);
+    cursor: grab;
+    touch-action: none;
+    transform: translateX(-50%);
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.cord-handle:hover {
+    transform: translateX(-50%) scale(1.08);
+}
+.cord-handle:active {
+    cursor: grabbing;
+}
+.cord-rope.cord-release {
+    animation: cord-swing 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes cord-swing {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(9deg);
+    }
+    40% {
+        transform: rotate(-7deg);
+    }
+    60% {
+        transform: rotate(4deg);
+    }
+    80% {
+        transform: rotate(-2deg);
+    }
+}
+
+/* Light Mode – Modern Organic Lime Palette */
+
+html:not(.dark) body {
+    background: #eef0e8 !important;
+    color: #17201c !important;
+}
+
+/* Navbar */
+html:not(.dark) nav {
+    background: rgba(238, 240, 232, 0.9) !important;
+    border-color: #cdd3c7 !important;
+}
+
+/* Main and alternate sections */
+html:not(.dark) section[class*="bg-[#070914]"] {
+    background: #eef0e8 !important;
+}
+
+html:not(.dark) section[class*="bg-[#0B0E1C]"] {
+    background: #e4e8de !important;
+}
+
+html:not(.dark) footer[class*="bg-[#050711]"] {
+    background: #dce1d7 !important;
+}
+
+/* Cards */
+html:not(.dark) [class*="bg-[#111426]"] {
+    background-color: #f8f9f4 !important;
+}
+
+/* Main headings */
+html:not(.dark) [class~="text-white"] {
+    color: #17201c !important;
+}
+
+html:not(.dark) [class~="bg-[#070914]/90"] {
+    color: #7c8581 !important;
+}
+
+/* Secondary text */
+html:not(.dark) [class~="text-gray-300"] {
+    color: #3f4943 !important;
+}
+
+html:not(.dark) [class~="text-gray-400"] {
+    color: #68706a !important;
+}
+
+html:not(.dark) [class~="text-gray-500"],
+html:not(.dark) [class~="text-gray-600"] {
+    color: #747d76 !important;
+}
+
+/* Purple text becomes olive green */
+html:not(.dark) [class~="text-purple-400"] {
+    color: #638800 !important;
+}
+
+/* Sky blue text becomes olive green */
+html:not(.dark) [class~="text-sky-400"] {
+    color: #638800 !important;
+}
+
+/* Purple buttons become green */
+html:not(.dark) [class~="bg-purple-600"] {
+    background-color: #7fae00 !important;
+    color: #ffffff !important;
+}
+
+html:not(.dark) [class~="bg-purple-600"]:hover {
+    background-color: #638800 !important;
+}
+
+/* Borders */
+html:not(.dark) [class*="border-white/"] {
+    border-color: #cdd3c7 !important;
+}
+
+html:not(.dark) [class*="border-purple-"] {
+    border-color: rgba(127, 174, 0, 0.4) !important;
+}
+
+html:not(.dark) [class*="border-2"] {
+    border-width: 2px !important;
+}
+
+/* Input fields */
+html:not(.dark) input,
+html:not(.dark) textarea {
+    background: #f8f9f4 !important;
+    color: #17201c !important;
+    border-color: #cdd3c7 !important;
+}
+
+/* Contact section gradient */
+html:not(.dark) [class*="from-[#17112C]"] {
+    background-image: linear-gradient(
+        to bottom right,
+        #f8f9f4,
+        #eef0e8,
+        #e4e8de
+    ) !important;
+}
+
+/* Pull cord */
+html:not(.dark) .cord-rope {
+    background: linear-gradient(to bottom, #7fae00, rgba(23, 32, 28, 0.4));
+}
+
+html:not(.dark) .cord-handle {
+    background: #c8ff3d;
+    color: #17201c;
+    border-color: #7fae00;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cord-rope,
+    .cord-handle {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+html:not(.dark) nav p {
+    color: #638800 !important;
+}
+
+/* Light mode letters */
+.hero-letter {
+    color: #17201c;
+}
+
+.hero-letter-outline {
+    color: transparent;
+    -webkit-text-stroke: 2px #17201c;
+}
+
+/* Dark mode letters */
+html.dark .hero-letter {
+    color: #ffffff;
+}
+
+html.dark .hero-letter-outline {
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+}
