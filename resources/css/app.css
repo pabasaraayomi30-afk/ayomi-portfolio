@@ -139,7 +139,7 @@ button {
 }
 
 /* Pull Cord */
-.cord-rope {
+/* .cord-rope {
     position: relative;
     width: 2px;
     height: 125px;
@@ -154,10 +154,10 @@ button {
     transition:
         height 0.15s ease-out,
         transform 0.15s ease-out;
-}
+} */
 
 /* Rope texture */
-.cord-rope::after {
+/* .cord-rope::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -170,7 +170,7 @@ button {
         rgba(255, 255, 255, 0.5) 5px,
         transparent 7px
     );
-}
+} */
 
 /* Pull handle */
 .cord-handle {
@@ -272,18 +272,6 @@ textarea {
     transition:
         height 0.15s ease-out,
         transform 0.15s ease-out;
-}
-
-.cord-rope::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
-        to bottom,
-        transparent 0 4px,
-        rgba(255, 255, 255, 0.55) 5px,
-        transparent 7px
-    );
 }
 
 .cord-handle {
@@ -507,4 +495,54 @@ html.dark .hero-letter {
 html.dark .hero-letter-outline {
     color: transparent;
     -webkit-text-stroke: 2px #ffffff;
+}
+
+.block {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.block.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Skills {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.Skills.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.projects-animate {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.projects-animate.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.projects-title {
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: transform 0.8s ease;
+}
+
+.projects-title.show {
+    opacity: 1;
+    transform: translateX(0);
 }

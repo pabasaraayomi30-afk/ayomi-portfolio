@@ -15,7 +15,7 @@
     <body class="bg-[#070914] font-sans text-white antialiased">
 
         <!-- Light/Dark Mode Pull Cord -->
-        <div id="pull-cord" class="fixed right-10 top-0 z-[9999] select-none md:block">
+        <div id="pull-cord" class="fixed right-7 top-0 z-[9999] select-none md:block">
 
             <!-- Rope -->
 
@@ -59,7 +59,7 @@
 
                 <div class="items-center hidden gap-8 md:flex">
 
-                    <a href="#" class="text-base font-medium text-gray-300 transition hover:text-purple-400">Home</a>
+                    <a href="#home" class="text-base font-medium text-gray-300 transition hover:text-purple-400">Home</a>
                     <a href="#about" class="text-base font-medium text-gray-300 transition hover:text-purple-400">About</a>
                     <a href="#skills" class="text-base font-medium text-gray-300 transition hover:text-purple-400">Skills</a>
                     <a href="#projects" class="text-base font-medium text-gray-300 transition hover:text-purple-400">Projects</a>
@@ -179,10 +179,10 @@
                 <!-- Animated Name -->
 
                 <h1
-                    aria-label="AYOMI"
+                    aria-label="Ayomi."
                     class="flex flex-wrap overflow-hidden text-6xl font-bold leading-tight tracking-widest sm:text-7xl lg:text-9xl"
                 >
-                    @foreach(str_split('AYOMI') as $index => $letter)
+                    @foreach(str_split('Ayomi.') as $index => $letter)
                         <span
                             class="animate-letter-reveal inline-block
                                 class="animate-letter-reveal inline-block
@@ -196,6 +196,25 @@
                         </span>
                     @endforeach
                 </h1>
+{{-- 
+                 <h1
+                    aria-label="Pabasara."
+                    class="flex flex-wrap overflow-hidden text-6xl font-bold leading-tight tracking-wide sm:text-7xl lg:text-8xl"
+                >
+                    @foreach(str_split('Pabasara') as $index => $letter)
+                        <span
+                            class="animate-letter-reveal inline-block
+                                class="animate-letter-reveal inline-block
+                                {{ $letter === 'O'
+                                        ? 'hero-letter-outline'
+                                        : 'hero-letter'
+                                }}"
+                            style="animation-delay: {{ $index * 70 }}ms"
+                        >
+                            {{ $letter }}
+                        </span>
+                    @endforeach
+                </h1> --}}
 
                 <!-- Changing Job Role -->
 
@@ -445,13 +464,13 @@
 
         <!-- about section -->
 
-        <section id="about" class="bg-[#0B0E1C] px-6 py-24 lg:px-[120px]">
+        <section id="about"  class="bg-[#0B0E1C] px-6 py-24 lg:px-[120px] ">
 
-            <p class="mb-3 text-s font-bold uppercase tracking-[0.25em] text-purple-400">ABOUT ME</p>
-            <h2 class="max-w-4xl text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Learning, building and testing with purpose.</h2>
-            <div class="grid gap-6 lg:grid-cols-2 xl:grid-cols-3 mt-14">
-
-                <div class="rounded-2xl border border-white/10 bg-[#111426] p-7 transition duration-300
+            <p  class="block mb-3 text-s font-bold uppercase tracking-[0.25em] text-purple-400">ABOUT ME</p>
+            <h2  class="block max-w-4xl text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Learning, building and testing with purpose.</h2>
+            <div class="grid block gap-6 lg:grid-cols-2 xl:grid-cols-3 mt-14">
+ 
+                <div class="block rounded-2xl border border-white/10 bg-[#111426] p-7 transition duration-300
 
                     hover:-translate-y-1 hover:border-purple-500/40">
 
@@ -461,7 +480,7 @@
 
                 </div>
 
-                <div class="rounded-2xl border border-white/10 bg-[#111426] p-7 transition duration-300
+                <div class="block rounded-2xl  border border-white/10 bg-[#111426] p-7 transition duration-300
 
                      hover:-translate-y-1 hover:border-purple-500/40">
 
@@ -471,7 +490,7 @@
 
                 </div>
 
-                <div class="rounded-2xl border border-white/10 bg-[#111426] p-7 transition duration-300
+                <div class="block rounded-2xl  border border-white/10 bg-[#111426] p-7 transition duration-300
 
                        hover:-translate-y-1 hover:border-purple-500/40">
 
@@ -486,7 +505,7 @@
 
         <!-- Technical Skills Section -->
 
-        <section  class="scroll-mt-20 bg-[#070914] px-6 py-24 lg:px-[120px]">
+        <section id="skills" class="scroll-mt-20 Skills bg-[#070914] px-6 py-24 lg:px-[120px]">
 
             <div class="w-full">
 
@@ -494,19 +513,19 @@
 
                 <div class="mb-14">
 
-                    <p id="skills" class="mb-3 text-s font-bold uppercase tracking-[0.25em] text-purple-400">
+                    <p  class=" Skills mb-3  text-s font-bold uppercase tracking-[0.25em] text-purple-400">
 
                         Technical Skills
 
                     </p>
 
-                    <h2 class="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+                    <h2 class="text-3xl font-bold text-white Skills sm:text-4xl lg:text-5xl">
 
                         Tools and technologies I work with.
 
                     </h2>
 
-                    <p class="max-w-2xl mt-5 text-base leading-7 text-gray-400 sm:text-lg">
+                    <p class="max-w-2xl mt-5 text-base leading-7 text-gray-400 Skills sm:text-lg">
 
                         Technologies and skills developed through my academic projects,
 
@@ -518,11 +537,11 @@
 
                 <!-- Skill Categories -->
 
-                <div class="grid gap-6 lg:grid-cols-3">
+                <div class="grid gap-6 Skills lg:grid-cols-3">
 
                     <!-- Development -->
 
-                    <div class="rounded-2xl border border-white/10 bg-[#111426] p-7
+                    <div class=" Skills rounded-2xl border border-white/10 bg-[#111426] p-7
 
                         transition duration-300 hover:-translate-y-1 hover:border-purple-500/40">
 
@@ -556,7 +575,7 @@
 
                     <!-- UI & Database -->
 
-                    <div class="rounded-2xl border border-white/10 bg-[#111426] p-7 transition duration-300 hover:-translate-y-1
+                    <div class="Skills rounded-2xl border border-white/10 bg-[#111426] p-7 transition duration-300 hover:-translate-y-1
 
                         hover:border-sky-500/40">
 
@@ -585,7 +604,7 @@
 
                     <!-- QA & Tools -->
 
-                    <div class="rounded-2xl border border-white/10 bg-[#111426] p-7
+                    <div class="Skills rounded-2xl border border-white/10 bg-[#111426] p-7
 
                         transition duration-300 hover:-translate-y-1 hover:border-purple-500/40">
 
@@ -623,7 +642,7 @@
 
         <section id="projects" class="scroll-mt-20 bg-[#0B0E1C] px-6 py-24 lg:px-[120px]">
 
-            <div class="mb-14">
+            <div class="mb-14 projects-title">
 
                 <p class="mb-3 text-s font-bold uppercase tracking-[0.25em] text-purple-400">
 
@@ -655,7 +674,7 @@
 
                 <article
 
-                    class="group flex h-full min-w-0 flex-col overflow-hidden
+                    class="projects-animate group flex h-full min-w-0 flex-col overflow-hidden
                     rounded-2xl border border-white/10 bg-[#111426]
                     transition duration-300 hover:-translate-y-1
                     hover:border-purple-500/50 hover:shadow-2xl
@@ -764,7 +783,7 @@
 
                 <article
 
-                    class="group flex h-full min-w-0 flex-col overflow-hidden
+                    class="projects-animate group flex h-full min-w-0 flex-col overflow-hidden
 
                     rounded-2xl border border-white/10 bg-[#111426]
 
@@ -900,7 +919,7 @@
 
                 <article
 
-                    class="group flex h-full min-w-0 flex-col overflow-hidden
+                    class="projects-animate group flex h-full min-w-0 flex-col overflow-hidden
                         rounded-2xl border border-white/10 bg-[#111426]
                         transition duration-300 hover:-translate-y-1
                         hover:border-purple-500/50 hover:shadow-2xl
@@ -1147,7 +1166,7 @@
 
                                     for="name"
 
-                                    class="block mb-2 text-sm font-semibold text-gray-300"
+                                    class="mb-2 text-sm font-semibold text-gray-300 "
 
                                 >
 
@@ -1178,7 +1197,7 @@
                                 <label
 
                                     for="email"
-                                    class="block mb-2 text-sm font-semibold text-gray-300"
+                                    class="mb-2 text-sm font-semibold text-gray-300 "
 
                                 >
 
@@ -1208,7 +1227,7 @@
 
                                 <label
                                     for="message"
-                                    class="block mb-2 text-sm font-semibold text-gray-300"
+                                    class="mb-2 text-sm font-semibold text-gray-300 "
                                 >
 
                                     Message
