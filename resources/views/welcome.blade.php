@@ -1342,22 +1342,22 @@
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn profile"
-                            class="flex items-center justify-center text-sm font-bold text-gray-400 transition border h-11 w-11 rounded-xl border-white/10 bg-white/5 hover:border-purple-400/50 hover:bg-blue-500/10 ">
+                            class="flex items-center justify-center text-sm font-bold text-gray-400 transition border h-11 w-11 rounded-xl border-white/10 bg-white/5 hover:border-purple-400/40 hover:bg-blue-500/10 ">
                             <img src="{{ asset('images/linkedin.png') }}"alt="LinkedIn" class="object-contain h-11 w-11">
 
                         </a>
 
                         <a
 
-                            href="YOUR_GITHUB_PROFILE_LINK"
+                            href="https://github.com/ambagalaayomi-collab"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="GitHub profile"
-                            class="flex items-center justify-center text-sm font-bold text-gray-400 transition border h-11 w-11 rounded-xl border-white/10 bg-white/5 hover:border-purple-400/50 hover:bg-purple-500/10 hover:text-purple-300"
+                            class="flex items-center justify-center text-sm font-bold text-gray-400 transition bg-black border h-11 w-11 rounded-xl border-white/10 hover:text-purple-300"
 
                         >
 
-                            <img src="{{ asset('images/github.png') }}"alt="github" class="object-contain h-11 w-11">
+                            <img src="{{ asset('images/github.png') }}"alt="github" clas10s="object-contain h-11 w-11">
 
                         </a>
 
