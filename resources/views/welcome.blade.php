@@ -1390,11 +1390,11 @@
                 document.addEventListener('DOMContentLoaded', function () {
 
                     Swal.fire({
-                        toast: 'true',
+                        toast: true,
                         position: 'bottom-end',
                         icon: 'success',
                         title: "{{ session('success') }}",
-                        showConfirmButton: 'false',
+                        showConfirmButton: false,
                         background: '#111426',
                         color: '#ffffff',
                         timer: '3500'
@@ -1413,11 +1413,11 @@
                         document.addEventListener('DOMContentLoaded', function () {
 
                             Swal.fire({
-                                toast: 'true',
+                                toast: true,
                                 position: 'Bottom-end',
                                 icon: 'error',
                                 title: 'Unable to Send Message',
-                                showConfirmButton: 'false',
+                                showConfirmButton: false,
                                 background: '#111426',
                                 color: '#ffffff',
                                 timer: 3500
