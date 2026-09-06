@@ -1390,14 +1390,14 @@
                 document.addEventListener('DOMContentLoaded', function () {
 
                     Swal.fire({
-
+                        toast: 'true',
+                        position: 'bottom-end',
                         icon: 'success',
-                        title: 'Message Sent!',
-                        text: @json(session('success')),
-                        confirmButtonText: 'Done',
+                        title: "{{ session('success') }}",
+                        showConfirmButton: 'false',
                         background: '#111426',
                         color: '#ffffff',
-                        confirmButtonColor: '#9333ea',
+                        timer: '3500'
                     });
 
                 });
@@ -1413,15 +1413,14 @@
                         document.addEventListener('DOMContentLoaded', function () {
 
                             Swal.fire({
-
+                                toast: 'true',
+                                position: 'Bottom-end',
                                 icon: 'error',
                                 title: 'Unable to Send Message',
-                                text: 'Please check the form and try again.',
-                                confirmButtonText: 'Check Form',
+                                showConfirmButton: 'false',
                                 background: '#111426',
                                 color: '#ffffff',
-                                confirmButtonColor: '#dc2626',
-
+                                timer: 3500
                             });
 
                         });
